@@ -3,7 +3,7 @@
 I led the team which designed and built a Log Analytics and Monitoring Pipeline for my previous company. This was an ambitious project with a plan to replace Splunk used in the company with available resources. We also committed ourselves to using Open-Source software where-ever possible.
 
 ![Diagram, schematic Description automatically
-generated](MonitoringPipelineDesign.png)
+generated](MonitoringPipelineDesign_2.png)
 Mobile Applications are the biggest sources of revenue for the company. Consequently, monitoring the performance of these applications and doing root cause analysis for any bugs/problems in these applications is very important for the Management. My team used the available Hortonworks cluster and Elastic Search clusters to monitor these applications.
 
 Mobile apps streamed their logs (using https GET and POST) to an external endpoint hosted on Heroku. The log messages with timestamps were primarily response times for transactions like payments or response times for search and query or response times to load pages and images. It also sent some MIS type of response times like time for cold start of the application along with OS and phone types. The applications combined several log statements in to one chunk and then posted the data either on a timer or when the log buffer was full to conserve bandwidth.
