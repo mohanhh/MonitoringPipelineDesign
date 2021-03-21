@@ -2,7 +2,6 @@
 
 I led the team which designed and built a Log Analytics and Monitoring Pipeline for my previous company. This was an ambitious project with a plan to replace Splunk used in the company with available resources. We also committed ourselves to using Open-Source software where-ever possible.
 
-![](RackMultipart20210
 
 Mobile Applications are the biggest sources of revenue for the company. Consequently, monitoring the performance of these applications and doing root cause analysis for any bugs/problems in these applications is very important for the Management. My team used the available Hortonworks cluster and Elastic Search clusters to monitor these applications.
 
