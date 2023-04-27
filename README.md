@@ -56,6 +56,6 @@ Each individual part of the pipeline was load tested. Flume cluster was tested b
 
 Next was Kafka. Kafka was optimized for availability by having 3 nodes and replication factor set to 2. It was optimized for high throughput by increasing number of partitions to 72. In our test basically Flume and Spark clusters were the limiting factor. Kafka was never really a problem as it easily could handle our 20000 messages per second rate. To increase durability, we used Acks = all for Kafka.
 
-We tested Spark cluster by increasing the number of executors until the preprocessor job could handle 20000 messages per second within a minute. More than this, the Streaming job would start falling back. We benchmarked that for 20000 messages per second, the preprocessor job would finish on an average within 40 to 45 seconds.
+We tested Spark cluster by increasing the number of executors until the preprocessor job could handle 20000 messages per second. More than this, the Streaming job would start falling back. We benchmarked that for 20000 messages per second, the preprocessor job would finish on an average within 40 to 45 seconds.
 
 Benchmarking Elastic search. Benchmarking 20000 writes per second using NetStorm and Elastic Search Put document command.
